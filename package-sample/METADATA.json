@@ -1,0 +1,10 @@
+{
+	"metadata": {
+		"slug": "a-slug-name",
+		"name": "Your Package name",
+		"short_description": "A line describing your package and purpose",
+		"author": "Your company/name",
+		"tags": ["tag1", "tag2", "tag3"],
+		"version": "0.0.1"
+	}
+}
