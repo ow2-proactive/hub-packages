@@ -5,6 +5,20 @@
 		"short_description": "A line describing your package and purpose",
 		"author": "Your company/name",
 		"tags": ["tag1", "tag2", "tag3"],
-		"version": "0.0.1"
+		"version": "1.0"
+	},
+	"catalog": {
+		"bucket": "name of the bucket in ProActive containing the package (Finance, Cloud Automation, ...)",
+		"objects": [
+			{
+				"name":"name to display",
+				"metadata": {
+					"kind": "kind of file (workflow, pcw-rule, ...)",
+					"commitMessage": "message of the last commit",
+					"contentType":"media type (application/wml, image/png, ...)"
+				},
+				"file":"relative/path/to/this/file"
+			}
+		]
 	}
 }
