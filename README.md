@@ -35,10 +35,24 @@ resources/jar           # all jar dependencies used within the workflows
 		"author": "Your company/name",
 		"tags": ["tag1", "tag2", "tag3"],
 		"version": "0.0.1"
+	},
+	"catalog": {
+		"bucket": "name of the bucket in ProActive containing the package (Finance, Cloud Automation, ...)",
+		"objects": [
+			{
+				"name":"name to display",
+				"metadata": {
+					"kind": "kind of file (workflow, pcw-rule, ...)",
+					"commitMessage": "message of the last commit",
+					"contentType":"media type (application/wml, image/png, ...)"
+				},
+				"file":"relative/path/to/this/file"
+			}
+		]
 	}
 }
 ```
-
+You can find examples of metadata files in the GitHub repository of existing packages.
 Do not hesitate to go on the hub to use similar tags than existing packages. This will help searches.
 
 ## Submit your Package
