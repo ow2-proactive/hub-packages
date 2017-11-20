@@ -1,0 +1,24 @@
+{
+	"metadata": {
+		"slug": "helloworld",
+        "name": "Hello World",
+        "short_description": "install a package example in multiple buckets",
+		"author": "ActiveEon's Team",
+		"tags": ["Tutorial", "Example", "Package_installation"],
+		"version": "1.0"
+	},
+	"catalog" : {
+		"bucket" : ["Finance", "New_bucket_from_github"],
+		"objects" : [
+			{
+				"name" : "hello_world",
+				"metadata" : {
+					"kind": "workflow",
+					"commitMessage": "First commit",
+					"contentType": "application/xml"
+				},
+				"file" : "resources/catalog/hello_world.xml"
+			}
+		]
+	}
+}

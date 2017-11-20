@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job xmlns="urn:proactive:jobdescriptor:dev" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="urn:proactive:jobdescriptor:dev http://www.activeeon.com/public_content/schemas/proactive/jobdescriptor/dev/schedulerjob.xsd"
+	 name="Hello_World">
+	<description>A simple Hello World job</description>
+	<taskFlow>
+		<task name="Hello">
+			<scriptExecutable>
+				<script>
+					<code language="javascript">
+						result = "Hello";
+					</code>
+				</script>
+			</scriptExecutable>
+		</task>
+		<task name="World">
+			<scriptExecutable>
+				<script>
+					<code language="javascript">
+						result = "World";
+					</code>
+				</script>
+			</scriptExecutable>
+		</task>
+		<task name="HelloWorld">
+			<depends>
+				<task ref="Hello"/>
+				<task ref="World"/>
+			</depends>
+			<scriptExecutable>
+				<script>
+					<code language="javascript">
+						print(results[0].value() + " " + results[1].value());
+					</code>
+				</script>
+			</scriptExecutable>
+		</task>
+	</taskFlow>
+</job>
