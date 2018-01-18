@@ -8,7 +8,7 @@
 		"version": "1.0"
 	},
 	"catalog" : {
-		"bucket" : ["Finance", "New_bucket_from_github"],
+		"bucket" : ["finance", "new-bucket-from-github"],
 		"objects" : [
 			{
 				"name" : "hello_world",
